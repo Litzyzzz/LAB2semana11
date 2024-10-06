@@ -2,25 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 #link del dataset https://www.kaggle.com/datasets/delfinaoliva/sabrina-carpenter-discography
-#Con barras
-df = pd.read_csv("sabrina.csv", delimiter=";")
-x=df['track_name'].head(7)
-y=df['spotify_streams'].head(7)
-plt.title("Cantidad de Reproduciones de 7 canciones de Sabrina Carpenter")
-plt.xlabel("Nombre de la cancion")
-plt.ylabel("Reproducciones")
-plt.bar(x,y,color=["red","pink","purple","beige","black","yellow","brown"])
-plt.show()
 
-#con lineas
-df = pd.read_csv("sabrina.csv", delimiter=";")
-x=df['track_name'].head(7)
-y=df['spotify_global_peak'].head(7)
-plt.title("Número de posiciones Globales de 7 canciones")
-plt.xlabel("Nombre de la cancion")
-plt.ylabel("Posicion Globalmente")
-plt.plot(x,y)
-plt.show()
 
 #con pastel
 df = pd.read_csv("sabrina.csv", delimiter=";")
