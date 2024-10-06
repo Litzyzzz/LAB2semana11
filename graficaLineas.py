@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
+#link del dataset https://www.kaggle.com/datasets/imdevskp/corona-virus-report?select=day_wise.csv
 #Con lineas
 df= pd.read_csv("covid19.csv")
 x = df["Date"].head(12)
