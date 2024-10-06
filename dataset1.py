@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
+#link del dataset https://www.kaggle.com/datasets/delfinaoliva/sabrina-carpenter-discography
 #Con barras
 df = pd.read_csv("sabrina.csv", delimiter=";")
 x=df['track_name'].head(7)
